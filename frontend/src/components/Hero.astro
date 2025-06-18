@@ -1,0 +1,20 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+<section class="hero">
+  <h1>{title}</h1>
+</section>
+
+<style>
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  border-radius: 1rem;
+}
+</style>
